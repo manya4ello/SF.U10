@@ -1,4 +1,7 @@
-﻿using System;
+﻿//Создайте консольный мини-калькулятор, который будет подсчитывать сумму двух чисел. Определите интерфейс для функции сложения числа и реализуйте его.
+
+
+using System;
 
 class Program
 {
@@ -52,11 +55,6 @@ class Program
         while (check);
 
        
-
-        //S<int> XS = new S<int>();
-        //Console.WriteLine(XS.Add(4, 9));
-
-
         Console.ReadKey();
     }
 
