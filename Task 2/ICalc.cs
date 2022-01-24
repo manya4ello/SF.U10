@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Task_2
 {
-    internal interface ICalc
+    public interface ICalc
     {
         decimal Add(decimal a, decimal b);
         decimal Multiply(decimal a, decimal b);
