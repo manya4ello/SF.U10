@@ -5,6 +5,8 @@
 
 using System;
 
+namespace Task_2;
+
 class Program
 {
     static ILogger Logger { get; set; }
@@ -66,13 +68,7 @@ class Program
 }
 
 public delegate decimal Operate(decimal a, decimal b);
-public interface ICalc
-{
-    decimal Add(decimal a, decimal b);
-    decimal Multiply(decimal a, decimal b);
-    decimal Subtract(decimal a, decimal b);
-    decimal Divide(decimal a, decimal b);
-}
+
 class Calc : ICalc
 {
     public decimal Add(decimal a, decimal b) { return a + b; }
@@ -83,12 +79,7 @@ class Calc : ICalc
 
 }
 
-public interface ILogger
-{
-    void Info(string message);
-    void Event(string message);
-    void Error(string message);
-}
+
 
 public class Logger : ILogger
 {
